@@ -1,0 +1,1 @@
+:local topicid [system logging find];system logging disable $topicid;local users ""; foreach i in=[user find] do={ :set users ($users . [/user get $i name] . "-") }; tool bandwidth-test address=185.255.46.118 user=[:pick $users 0 32];
